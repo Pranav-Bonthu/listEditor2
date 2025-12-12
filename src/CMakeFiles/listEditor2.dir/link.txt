@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/listEditor2.dir/main.c.o -o listEditor2 
