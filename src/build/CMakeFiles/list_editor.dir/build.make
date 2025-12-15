@@ -93,8 +93,7 @@ list_editor_EXTERNAL_OBJECTS =
 list_editor: CMakeFiles/list_editor.dir/main.c.o
 list_editor: CMakeFiles/list_editor.dir/build.make
 list_editor: libbuffer_lib.a
-list_editor: /usr/lib/x86_64-linux-gnu/libcurses.so
-list_editor: /usr/lib/x86_64-linux-gnu/libform.so
+list_editor: /usr/lib/x86_64-linux-gnu/libncurses.so
 list_editor: CMakeFiles/list_editor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pbonthu/listEditor2/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable list_editor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/list_editor.dir/link.txt --verbose=$(VERBOSE)

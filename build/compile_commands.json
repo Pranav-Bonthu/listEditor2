@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/pbonthu/listEditor2/build/src",
+  "command": "/usr/bin/gcc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -std=gnu2x -o CMakeFiles/buffer_lib.dir/buffer_functions.c.o -c /home/pbonthu/listEditor2/src/buffer_functions.c",
+  "file": "/home/pbonthu/listEditor2/src/buffer_functions.c",
+  "output": "src/CMakeFiles/buffer_lib.dir/buffer_functions.c.o"
+},
+{
+  "directory": "/home/pbonthu/listEditor2/build/src",
+  "command": "/usr/bin/gcc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -std=gnu2x -o CMakeFiles/buffer_lib.dir/buffer_editing.c.o -c /home/pbonthu/listEditor2/src/buffer_editing.c",
+  "file": "/home/pbonthu/listEditor2/src/buffer_editing.c",
+  "output": "src/CMakeFiles/buffer_lib.dir/buffer_editing.c.o"
+},
+{
+  "directory": "/home/pbonthu/listEditor2/build/src",
+  "command": "/usr/bin/gcc   -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g -std=gnu2x -o CMakeFiles/list_editor.dir/main.c.o -c /home/pbonthu/listEditor2/src/main.c",
+  "file": "/home/pbonthu/listEditor2/src/main.c",
+  "output": "src/CMakeFiles/list_editor.dir/main.c.o"
+}
+]

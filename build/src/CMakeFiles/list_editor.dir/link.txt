@@ -1,0 +1,1 @@
+/usr/bin/gcc -Wall -Wextra -pedantic -Wconversion -Wdouble-promotion -Wduplicated-branches -Wduplicated-cond -Wimplicit-fallthrough -Wlogical-op -Wmisleading-indentation -Wnull-dereference -Wshadow -Wsign-conversion -Wunreachable-code -Wunused -g -g CMakeFiles/list_editor.dir/main.c.o -o list_editor  libbuffer_lib.a -lcurses /usr/lib/x86_64-linux-gnu/libform.so 

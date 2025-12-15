@@ -1,10 +1,11 @@
+#include "buffer_editing.h"
+#include "buffer_functions.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ncurses.h>
 #include <pthread.h>
-#include "buffer_editing.h"
-#include "buffer_functions.h"
 #include <sys/file.h> 
 
 

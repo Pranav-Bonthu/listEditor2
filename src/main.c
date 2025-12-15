@@ -11,7 +11,7 @@
 
 int main() {
     BufferLines buffer;
-    int lock = lock_file("list.txt"); //creates a locked file ( list.txt.lock)that signals someone is editing
+    int lock = lock_file("list.txt"); 
     if (lock < 0 ){
         printf("File is busy\n");
         return 1;
@@ -34,7 +34,7 @@ int main() {
     free_buffer(&buffer);
 
     unlock_file(lock); // unlock the file after editing
-    unlink("list.txt.lock"); // remove the lock file
+    //unlink("list.txt.lock"); // remove the lock file
 
 
     return 0;
