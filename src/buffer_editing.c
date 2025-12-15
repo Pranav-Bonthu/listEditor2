@@ -114,6 +114,10 @@ void edit_buffer(BufferLines *buffer){
     int cursor_row = 0;
     int cursor_col = 0;
 
+    if (buffer->count ==0){
+        insert_line(buffer, 0, ""); 
+    }
+
     pthread_mutex_lock(&buffer->lock);
     while (1){
 

@@ -34,7 +34,7 @@ int main() {
     free_buffer(&buffer);
 
     unlock_file(lock); // unlock the file after editing
-    //unlink("list.txt.lock"); // remove the lock file
+    unlink("list.txt.lock"); // remove the lock file
 
 
     return 0;

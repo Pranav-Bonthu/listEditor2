@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ncurses.h>
 #include <pthread.h>
-#include "buffer.h"
+#include "buffer_functions.h"
 #include <sys/file.h> 
 #include <fcntl.h>     // O_RDWR
 #include <unistd.h>    // close()
@@ -63,7 +63,7 @@ void free_buffer(BufferLines *buffer){
 }   
 
 int lock_file(const char *filename){
-    int check_lock = open(filename, O_RDWR); //rdwr = read write
+    int check_lock = open(filename, O_RDWR | O_CREAT); //rdwr = read write
     if (check_lock < 0){
         printf("%d\n", check_lock);
         printf("error for opening the file\n");
