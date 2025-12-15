@@ -3,7 +3,9 @@
 #include <string.h>
 #include <ncurses.h> //ui cotnrol in terminal
 #include <pthread.h> //mutex and threads
-#include "buffer.h" //my functions 
+#include "buffer_editing.h" //my functions 
+#include "buffer_functions.h" //my functions 
+
 #include <unistd.h>    // unlink()
 
 
@@ -14,8 +16,6 @@ int main() {
         printf("File is busy\n");
         return 1;
     }
-
-
 
     initial_buffer(&buffer);
     load_file(&buffer, "list.txt");

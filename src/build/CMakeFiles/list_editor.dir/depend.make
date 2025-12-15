@@ -1,2 +1,2 @@
-# Empty dependencies file for listEditor2.
+# Empty dependencies file for list_editor.
 # This may be replaced when dependencies are built.

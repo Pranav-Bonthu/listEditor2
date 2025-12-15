@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/pbonthu/listEditor2/src/main.c" "CMakeFiles/listEditor2.dir/main.c.o" "gcc" "CMakeFiles/listEditor2.dir/main.c.o.d"
+  "/home/pbonthu/listEditor2/src/main.c" "CMakeFiles/list_editor.dir/main.c.o" "gcc" "CMakeFiles/list_editor.dir/main.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

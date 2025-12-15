@@ -1,3 +1,0 @@
-/home/pbonthu/listEditor2/src/CMakeFiles/listEditor2.dir
-/home/pbonthu/listEditor2/src/CMakeFiles/edit_cache.dir
-/home/pbonthu/listEditor2/src/CMakeFiles/rebuild_cache.dir

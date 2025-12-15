@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/pbonthu/listEditor2/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pbonthu/listEditor2/src
+CMAKE_BINARY_DIR = /home/pbonthu/listEditor2/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pbonthu/listEditor2/src/CMakeFiles /home/pbonthu/listEditor2/src//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pbonthu/listEditor2/src/build/CMakeFiles /home/pbonthu/listEditor2/src/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pbonthu/listEditor2/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pbonthu/listEditor2/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,85 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named listEditor2
+# Target rules for targets named buffer_lib
 
 # Build rule for target.
-listEditor2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 listEditor2
-.PHONY : listEditor2
+buffer_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 buffer_lib
+.PHONY : buffer_lib
 
 # fast build rule for target.
-listEditor2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listEditor2.dir/build.make CMakeFiles/listEditor2.dir/build
-.PHONY : listEditor2/fast
+buffer_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffer_lib.dir/build.make CMakeFiles/buffer_lib.dir/build
+.PHONY : buffer_lib/fast
+
+#=============================================================================
+# Target rules for targets named list_editor
+
+# Build rule for target.
+list_editor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 list_editor
+.PHONY : list_editor
+
+# fast build rule for target.
+list_editor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_editor.dir/build.make CMakeFiles/list_editor.dir/build
+.PHONY : list_editor/fast
+
+buffer_editing.o: buffer_editing.c.o
+.PHONY : buffer_editing.o
+
+# target to build an object file
+buffer_editing.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffer_lib.dir/build.make CMakeFiles/buffer_lib.dir/buffer_editing.c.o
+.PHONY : buffer_editing.c.o
+
+buffer_editing.i: buffer_editing.c.i
+.PHONY : buffer_editing.i
+
+# target to preprocess a source file
+buffer_editing.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffer_lib.dir/build.make CMakeFiles/buffer_lib.dir/buffer_editing.c.i
+.PHONY : buffer_editing.c.i
+
+buffer_editing.s: buffer_editing.c.s
+.PHONY : buffer_editing.s
+
+# target to generate assembly for a file
+buffer_editing.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffer_lib.dir/build.make CMakeFiles/buffer_lib.dir/buffer_editing.c.s
+.PHONY : buffer_editing.c.s
+
+buffer_functions.o: buffer_functions.c.o
+.PHONY : buffer_functions.o
+
+# target to build an object file
+buffer_functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffer_lib.dir/build.make CMakeFiles/buffer_lib.dir/buffer_functions.c.o
+.PHONY : buffer_functions.c.o
+
+buffer_functions.i: buffer_functions.c.i
+.PHONY : buffer_functions.i
+
+# target to preprocess a source file
+buffer_functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffer_lib.dir/build.make CMakeFiles/buffer_lib.dir/buffer_functions.c.i
+.PHONY : buffer_functions.c.i
+
+buffer_functions.s: buffer_functions.c.s
+.PHONY : buffer_functions.s
+
+# target to generate assembly for a file
+buffer_functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/buffer_lib.dir/build.make CMakeFiles/buffer_lib.dir/buffer_functions.c.s
+.PHONY : buffer_functions.c.s
 
 main.o: main.c.o
 .PHONY : main.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listEditor2.dir/build.make CMakeFiles/listEditor2.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_editor.dir/build.make CMakeFiles/list_editor.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -142,7 +203,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listEditor2.dir/build.make CMakeFiles/listEditor2.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_editor.dir/build.make CMakeFiles/list_editor.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -150,7 +211,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/listEditor2.dir/build.make CMakeFiles/listEditor2.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/list_editor.dir/build.make CMakeFiles/list_editor.dir/main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -161,7 +222,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... listEditor2"
+	@echo "... buffer_lib"
+	@echo "... list_editor"
+	@echo "... buffer_editing.o"
+	@echo "... buffer_editing.i"
+	@echo "... buffer_editing.s"
+	@echo "... buffer_functions.o"
+	@echo "... buffer_functions.i"
+	@echo "... buffer_functions.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
