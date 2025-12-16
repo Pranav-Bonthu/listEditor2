@@ -150,7 +150,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ListEditor
+CMAKE_PROJECT_NAME:STATIC=ProjectTitle
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=1.0
@@ -307,6 +307,15 @@ PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
+//Value Computed by CMake
+ProjectTitle_BINARY_DIR:STATIC=/home/pbonthu/listEditor2/build
+
+//Value Computed by CMake
+ProjectTitle_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+ProjectTitle_SOURCE_DIR:STATIC=/home/pbonthu/listEditor2
 
 //Name of the computer/site where compile is being run
 SITE:STRING=7Y8M034
